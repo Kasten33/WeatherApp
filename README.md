@@ -1,0 +1,3 @@
+# WeatherApp
+had fun with some of the numbers... 
+tried a little css on the side cause i didnt want to keep writing <style> in my code
