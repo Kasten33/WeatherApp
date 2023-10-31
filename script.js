@@ -3,7 +3,7 @@ const WURL = "https://api.openweathermap.org/data/2.5/weather?q=tooele&appid=3af
 fetch(WURL)
   .then((response) => response.json())
   .then((jsObject) => {
-    // console.log(jsObject);
+     console.log(jsObject);
 
     document.getElementById("five-city").textContent = jsObject.name;
 
@@ -24,12 +24,14 @@ fetch(WURL)
     // console.log(wc);
   });
 
-  const NURL = "https://newsapi.org/v2/everything?q=tesla&from=2023-09-25&sortBy=publishedAt&apiKey=7925e6a5cce646bd99df2b1b16b7538c"
+  const NURL = "https://newsapi.org/v2/everything?q=tesla&from=&sortBy=language=en&publishedAt&apiKey=7925e6a5cce646bd99df2b1b16b7538c"
+ 
 
   fetch(NURL)
+  
   .then((response) => response.json())
   .then((jsObject) => {
-
+ console.log(jsObject);
   document.getElementById("header-img").setAttribute('src', jsObject.articles[0].urlToImage) 
   document.getElementById("header-article").textContent = jsObject.articles[0].title;
   document.getElementById("header-desc").textContent = jsObject.articles[0].description;
@@ -54,9 +56,4 @@ fetch(WURL)
   document.getElementById("article-link-5").textContent = jsObject.articles[4].title;
   document.getElementById("article-desc-5").textContent = jsObject.articles[4].description;
   document.getElementById("article-link-5").setAttribute('href', jsObject.articles[4].url) 
-
-
-
-
-
-  });
+});
