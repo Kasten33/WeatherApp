@@ -39,14 +39,7 @@ hr {
     background: #cecece; 
     max-width: 100%; 
 } 
-.archive { 
-    display: flex; 
-    justify-content: center;
-    align-items: center;
-    grid-gap: 1em; 
-    
-    
-} 
+
 .archive2 { 
     display: grid; 
     grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); 
@@ -113,3 +106,18 @@ body {
 .wow{
     background-color: lightgrey;
   }
+  span{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+.archive{
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+}
