@@ -40,11 +40,12 @@ hr {
     max-width: 100%; 
 } 
 .archive { 
-    display: grid; 
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); 
+    display: flex; 
+    justify-content: center;
+    align-items: center;
     grid-gap: 1em; 
-    grid-auto-flow: dense; 
-    padding-bottom: 160px;
+    
+    
 } 
 .archive2 { 
     display: grid; 
@@ -102,10 +103,13 @@ body {
     text-align: center;
     color: white;
    }
-   .text{
+.text{
     font-size: 40px;
     text-align: center;
   }
-  .this-sucks{
+.this-sucks{
     float:left;
+  }
+.wow{
+    background-color: lightgrey;
   }
